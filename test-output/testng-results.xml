@@ -1,111 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Navigation through the receipe links under a particular category is unsuccessful as the link is not found]]>
     </line>
-    <line>
-      <![CDATA[Navigation through the receipe links under a particular category is unsuccessful as the link is not found]]>
-    </line>
-    <line>
-      <![CDATA[Recipes button is not displayed]]>
-    </line>
-    <line>
-      <![CDATA[Quick Receipes Link is not found]]>
-    </line>
-    <line>
-      <![CDATA[Navigation through the receipe links under a particular category is unsuccessful as the link is not found]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-02-15T02:59:18 EST" name="Recipe Scrapper for tarla dalal page" finished-at="2022-02-15T03:02:25 EST" duration-ms="187666">
+  <suite started-at="2022-02-15T12:49:45 EST" name="Default suite" finished-at="2022-02-15T13:13:41 EST" duration-ms="1436019">
     <groups>
     </groups>
-    <test started-at="2022-02-15T02:59:18 EST" name="RecipeScrapper" finished-at="2022-02-15T03:02:25 EST" duration-ms="187666">
+    <test started-at="2022-02-15T12:49:45 EST" name="Default test" finished-at="2022-02-15T13:13:41 EST" duration-ms="1436019">
       <class name="com.scrapper.qa.test.CuisineRecipes">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.scrapper.qa.test.CuisineRecipes@78123e82]" started-at="2022-02-15T02:59:18 EST" name="beforeTest" finished-at="2022-02-15T02:59:26 EST" duration-ms="8348" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.scrapper.qa.test.CuisineRecipes@4d5b6aac]" started-at="2022-02-15T12:49:45 EST" name="beforeTest" finished-at="2022-02-15T12:49:52 EST" duration-ms="7679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="ScrapeCuisineReceipes()[pri:0, instance:com.scrapper.qa.test.CuisineRecipes@78123e82]" started-at="2022-02-15T03:00:10 EST" name="ScrapeCuisineReceipes" finished-at="2022-02-15T03:00:30 EST" duration-ms="20669" status="PASS">
+        <test-method signature="ScrapeCuisineReceipes()[pri:1, instance:com.scrapper.qa.test.CuisineRecipes@4d5b6aac]" started-at="2022-02-15T12:49:52 EST" name="ScrapeCuisineReceipes" finished-at="2022-02-15T13:13:40 EST" duration-ms="1427914" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Navigation through the receipe links under a particular category is unsuccessful as the link is not found]]>
             </line>
           </reporter-output>
         </test-method> <!-- ScrapeCuisineReceipes -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.scrapper.qa.test.CuisineRecipes@78123e82]" started-at="2022-02-15T03:02:24 EST" name="TearDown" finished-at="2022-02-15T03:02:25 EST" duration-ms="699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.scrapper.qa.test.CuisineRecipes -->
-      <class name="com.scrapper.qa.test.KidsRecipes">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.scrapper.qa.test.KidsRecipes@63a12c68]" started-at="2022-02-15T02:59:31 EST" name="beforeTest" finished-at="2022-02-15T02:59:36 EST" duration-ms="4862" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="ScrapeKidsReceipe()[pri:0, instance:com.scrapper.qa.test.KidsRecipes@63a12c68]" started-at="2022-02-15T02:59:43 EST" name="ScrapeKidsReceipe" finished-at="2022-02-15T03:00:10 EST" duration-ms="26505" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Navigation through the receipe links under a particular category is unsuccessful as the link is not found]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ScrapeKidsReceipe -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.scrapper.qa.test.KidsRecipes@63a12c68]" started-at="2022-02-15T03:02:25 EST" name="afterTest" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644912145700" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.scrapper.qa.test.KidsRecipes -->
-      <class name="com.scrapper.qa.test.QuickRecipes">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.scrapper.qa.test.QuickRecipes@67c33749]" started-at="2022-02-15T02:59:36 EST" name="beforeTest" finished-at="2022-02-15T02:59:43 EST" duration-ms="7269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="ScrapeQuickReceipes()[pri:0, instance:com.scrapper.qa.test.QuickRecipes@67c33749]" started-at="2022-02-15T03:00:30 EST" name="ScrapeQuickReceipes" finished-at="2022-02-15T03:02:01 EST" duration-ms="90390" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Recipes button is not displayed]]>
-            </line>
-            <line>
-              <![CDATA[Quick Receipes Link is not found]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ScrapeQuickReceipes -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.scrapper.qa.test.QuickRecipes@67c33749]" started-at="2022-02-15T03:02:25 EST" name="TearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644912145702" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.scrapper.qa.test.QuickRecipes -->
-      <class name="com.scrapper.qa.test.HealthyReceipes">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.scrapper.qa.test.HealthyReceipes@fba92d3]" started-at="2022-02-15T02:59:26 EST" name="beforeTest" finished-at="2022-02-15T02:59:31 EST" duration-ms="5061" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="ScrapeHealthyReceipes()[pri:0, instance:com.scrapper.qa.test.HealthyReceipes@fba92d3]" started-at="2022-02-15T03:02:01 EST" name="ScrapeHealthyReceipes" finished-at="2022-02-15T03:02:24 EST" duration-ms="23796" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Navigation through the receipe links under a particular category is unsuccessful as the link is not found]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ScrapeHealthyReceipes -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.scrapper.qa.test.HealthyReceipes@fba92d3]" started-at="2022-02-15T03:02:25 EST" name="TearDown" finished-at="2022-02-15T03:02:25 EST" duration-ms="0" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.scrapper.qa.test.CuisineRecipes@4d5b6aac]" started-at="2022-02-15T13:13:40 EST" name="TearDown" finished-at="2022-02-15T13:13:41 EST" duration-ms="335" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: headless chrome=98.0.4758.82)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'X7021404', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:56582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 221537863d3ca1d5deeb95c746c65926]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: headless chrome=98.0.4758.82)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'X7021404', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:56582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 221537863d3ca1d5deeb95c746c65926
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.scrapper.qa.test.HealthyReceipes.TearDown(HealthyReceipes.java:43)
+at com.scrapper.qa.test.CuisineRecipes.TearDown(CuisineRecipes.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -132,11 +81,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.scrapper.qa.test.HealthyReceipes -->
-    </test> <!-- RecipeScrapper -->
-  </suite> <!-- Recipe Scrapper for tarla dalal page -->
+      </class> <!-- com.scrapper.qa.test.CuisineRecipes -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

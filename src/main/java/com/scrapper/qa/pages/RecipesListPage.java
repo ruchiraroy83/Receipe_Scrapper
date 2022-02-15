@@ -69,13 +69,14 @@ public class RecipesListPage extends TestBase  {
 				      String Steps=ReceipeDetails.GetCookingSteps();
 				      xlutil.setCellData("Recipes",i+lastRowCount,3,Steps);
 				      String Nutrients=ReceipeDetails.GetNutrients();
+				      System.out.println(Nutrients);
 				      xlutil.setCellData("Recipes",i+lastRowCount,4,Nutrients);
 				      if (Nutrients==null) {
 				    	  xlutil.setCellData("Recipes",i+lastRowCount,4,"No data in nutrients");
 				    	  System.out.println("No data in nutrients");
 				      }
 				      String ImageLink=ReceipeDetails.Getimg_link();
-				      xlutil.setCellData("Recipes",i+1,5,ImageLink);
+				      xlutil.setCellData("Recipes",i+lastRowCount,5,ImageLink);
 				      driver.navigate().back();
 				    
 				  }

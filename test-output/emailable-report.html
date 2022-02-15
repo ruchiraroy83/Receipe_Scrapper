@@ -8,27 +8,57 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Recipe Scrapper for tarla dalal page</th></tr>
-<tr><td><a href="#t0">RecipeScrapper</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">187,666</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,436,019</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Recipe Scrapper for tarla dalal page</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RecipeScrapper &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.scrapper.qa.test.HealthyReceipes</td><td><a href="#m0">TearDown</a></td><td rowspan="1">1644912145696</td><td rowspan="1">0</td></tr><tr><th colspan="4">RecipeScrapper &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.scrapper.qa.test.KidsRecipes</td><td><a href="#m1">afterTest</a></td><td rowspan="1">1644912145700</td><td rowspan="1">-1644912145700</td></tr><tr class="skippedodd"><td rowspan="1">com.scrapper.qa.test.QuickRecipes</td><td><a href="#m2">TearDown</a></td><td rowspan="1">1644912145702</td><td rowspan="1">-1644912145702</td></tr><tr><th colspan="4">RecipeScrapper &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.scrapper.qa.test.CuisineRecipes</td><td><a href="#m3">ScrapeCuisineReceipes</a></td><td rowspan="1">1644912010137</td><td rowspan="1">20669</td></tr><tr class="passedodd"><td rowspan="1">com.scrapper.qa.test.HealthyReceipes</td><td><a href="#m4">ScrapeHealthyReceipes</a></td><td rowspan="1">1644912121200</td><td rowspan="1">23796</td></tr><tr class="passedeven"><td rowspan="1">com.scrapper.qa.test.KidsRecipes</td><td><a href="#m5">ScrapeKidsReceipe</a></td><td rowspan="1">1644911983624</td><td rowspan="1">26505</td></tr><tr class="passedodd"><td rowspan="1">com.scrapper.qa.test.QuickRecipes</td><td><a href="#m6">ScrapeQuickReceipes</a></td><td rowspan="1">1644912030807</td><td rowspan="1">90390</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.scrapper.qa.test.CuisineRecipes</td><td><a href="#m0">TearDown</a></td><td rowspan="1">1644948820751</td><td rowspan="1">335</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.scrapper.qa.test.CuisineRecipes</td><td><a href="#m1">ScrapeCuisineReceipes</a></td><td rowspan="1">1644947392813</td><td rowspan="1">1427914</td></tr></tbody>
 </table>
-<h2>RecipeScrapper</h2><h3 id="m0">com.scrapper.qa.test.HealthyReceipes#TearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+<h2>Default test</h2><h3 id="m0">com.scrapper.qa.test.CuisineRecipes#TearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: headless chrome=98.0.4758.82)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;X7021404&apos;, ip: &apos;192.168.1.153&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:56582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 221537863d3ca1d5deeb95c746c65926
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.scrapper.qa.test.HealthyReceipes.TearDown(HealthyReceipes.java:43)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.scrapper.qa.test.KidsRecipes#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.scrapper.qa.test.QuickRecipes#TearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.scrapper.qa.test.CuisineRecipes#ScrapeCuisineReceipes</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Navigation through the receipe links under a particular category is unsuccessful as the link is not found</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.scrapper.qa.test.HealthyReceipes#ScrapeHealthyReceipes</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Navigation through the receipe links under a particular category is unsuccessful as the link is not found</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.scrapper.qa.test.KidsRecipes#ScrapeKidsReceipe</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Navigation through the receipe links under a particular category is unsuccessful as the link is not found</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.scrapper.qa.test.QuickRecipes#ScrapeQuickReceipes</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Recipes button is not displayed<br/>Quick Receipes Link is not found</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at com.scrapper.qa.test.CuisineRecipes.TearDown(CuisineRecipes.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.afterRun(TestRunner.java:877)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.scrapper.qa.test.CuisineRecipes#ScrapeCuisineReceipes</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Navigation through the receipe links under a particular category is unsuccessful as the link is not found</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

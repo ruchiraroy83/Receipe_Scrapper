@@ -61,7 +61,15 @@ public class RecipeDetailsPage extends TestBase {
 	public String GetNutrients() {
 		try {
 			if (nutrients.isDisplayed()) {
-				return nutrients.getText();
+				String Nut=nutrients.getText();
+				String Nutrients;
+				if (Nut.indexOf("Click")==0) {
+					Nutrients=Nut.substring(Nut.indexOf("Nutrient"));
+				}else {
+					Nutrients=Nut.substring(Nut.indexOf("Nutrient"), Nut.indexOf("Click"));
+				}
+				
+				return Nutrients;
 			}
 		} catch (Exception e) {
 //			e.printStackTrace();

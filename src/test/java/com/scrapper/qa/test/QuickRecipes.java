@@ -21,7 +21,7 @@ public class QuickRecipes extends TestBase {
 		super();
 	}	
 
-	@Test(priority=1)
+	@Test(priority=4)
 	public void ScrapeQuickReceipes() throws IOException {
 		homePage.ClickRecipes();
 		String Category=recipeCatPage.clickQuickRecipe();

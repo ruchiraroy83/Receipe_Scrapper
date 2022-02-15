@@ -22,7 +22,7 @@ public class HealthyReceipes extends TestBase {
 		super();
 	}	
 
-	@Test (priority=1)
+	@Test (priority=3)
 	public void ScrapeHealthyReceipes() throws IOException {
 		homePage.ClickRecipes();
 		String Category=recipeCatPage.clickHealthyRecipe();

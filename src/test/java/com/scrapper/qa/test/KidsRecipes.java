@@ -24,7 +24,7 @@ public class KidsRecipes extends TestBase{
 	public KidsRecipes() {
 		super();
 	}	
-  @Test(priority=1)
+  @Test(priority=2)
   public void ScrapeKidsReceipe() throws IOException {
 	homePage.ClickRecipes();
 	String Category=recipeCatPage.clickKidsRecipe();

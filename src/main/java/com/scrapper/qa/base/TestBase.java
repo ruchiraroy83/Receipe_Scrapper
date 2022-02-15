@@ -25,14 +25,14 @@ public class TestBase {
 
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"./src/main/resources/com/scrapper/" + "qa/config/config.properties");
+					"./src/test/resources/Properties/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 			Reporter.log("Unable to load the property file");
 
 		} catch (IOException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 			Reporter.log("Unable to load the property file");
 		}
 	}

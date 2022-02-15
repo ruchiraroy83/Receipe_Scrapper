@@ -1,4 +1,6 @@
 package com.scrapper.qa.test;
+import java.io.IOException;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,8 +24,8 @@ public class KidsRecipes extends TestBase{
 	public KidsRecipes() {
 		super();
 	}	
-  @Test
-  public void ScrapeKidsReceipe() {
+  @Test(priority=1)
+  public void ScrapeKidsReceipe() throws IOException {
 	homePage.ClickRecipes();
 	String Category=recipeCatPage.clickKidsRecipe();
 	recipesListPage.ClickOnRecipe_GetDetails(Category);
@@ -39,8 +41,8 @@ public class KidsRecipes extends TestBase{
 
   @AfterTest
   public void afterTest() {
-//	  driver.close();
-//	  driver.quit();
+	  driver.close();
+	  driver.quit();
   }
 
 }

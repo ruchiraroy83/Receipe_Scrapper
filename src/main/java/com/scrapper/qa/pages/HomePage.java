@@ -24,7 +24,7 @@ public class HomePage extends TestBase {
 				return new RecipesCategoryPage();
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 			Reporter.log("Recipes button is not displayed");
 			return null;
 		}

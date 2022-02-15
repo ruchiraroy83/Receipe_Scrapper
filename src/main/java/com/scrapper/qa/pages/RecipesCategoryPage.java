@@ -31,7 +31,7 @@ public class RecipesCategoryPage  extends TestBase {
 				 return CategoryName;
 			 }
 		} catch (Exception e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 			Reporter.log("Healthy Receipes Link is not found");
 		}
 		return null;
@@ -47,7 +47,7 @@ public class RecipesCategoryPage  extends TestBase {
 				 return CategoryName;
 			 }
 		} catch (Exception e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 			Reporter.log("Quick Receipes Link is not found");
 		}
 		return null;

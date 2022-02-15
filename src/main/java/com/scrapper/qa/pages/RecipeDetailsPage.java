@@ -36,13 +36,9 @@ public class RecipeDetailsPage extends TestBase {
 		try {
 			if (ingredients.isDisplayed()) {
 				return ingredients.getText();
-//				  System.out.println(Totalingredients);
-
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-//			Reporter.log("Ingredients Not Found");
+			Reporter.log("Ingredients Not Found");
 			return null;
 		}
 		return null;
@@ -53,11 +49,9 @@ public class RecipeDetailsPage extends TestBase {
 		try {
 			if (CookingMethod.isDisplayed()) {
 				return CookingMethod.getText();
-//				  System.out.println(CookingSteps);
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+//			e.printStackTrace();
 			Reporter.log("Cooking Method Not Found");
 		}
 		return null;
@@ -68,11 +62,9 @@ public class RecipeDetailsPage extends TestBase {
 		try {
 			if (nutrients.isDisplayed()) {
 				return nutrients.getText();
-//				  System.out.println(TotalNutrients);
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+//			e.printStackTrace();
 			Reporter.log("No Nutrients Data is present");
 			return null;
 		}
@@ -83,12 +75,10 @@ public class RecipeDetailsPage extends TestBase {
 	public String Getimg_link() {
 		try {
 			if (img_link.isEnabled()) {
-//				  System.out.println("/*-----------imagelink-------------*/");
-//				  System.out.println(img_link.getText());
 				return img_link.getAttribute("src");
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 			return null;
 		}
 		return img_link.getText();

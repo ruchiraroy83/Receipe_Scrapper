@@ -72,7 +72,6 @@ public class RecipeDetailsPage extends TestBase {
 				return Nutrients;
 			}
 		} catch (Exception e) {
-//			e.printStackTrace();
 			Reporter.log("No Nutrients Data is present");
 			return null;
 		}

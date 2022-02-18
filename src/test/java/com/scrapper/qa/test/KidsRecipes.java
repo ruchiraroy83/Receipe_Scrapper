@@ -24,11 +24,11 @@ public class KidsRecipes extends TestBase{
 	public KidsRecipes() {
 		super();
 	}	
-  @Test(priority=2)
+  @Test
   public void ScrapeKidsReceipe() throws IOException {
 	homePage.ClickRecipes();
 	String Category=recipeCatPage.clickKidsRecipe();
-	recipesListPage.ClickOnRecipe_GetDetails(Category);
+	recipesListPage.ClickOnRecipe_GetDetails(Category,1);
   }
   @BeforeTest
   public void beforeTest() {

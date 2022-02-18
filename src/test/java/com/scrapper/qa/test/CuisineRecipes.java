@@ -21,11 +21,11 @@ public class CuisineRecipes extends TestBase {
 		super();
 	}	
 
-	@Test(priority=1)
+	@Test
 	public void ScrapeCuisineReceipes() throws IOException {
 		homePage.ClickRecipes();
 		String Category=recipeCatPage.ClickCuisinelink();
-		recipesListPage.ClickOnRecipe_GetDetails(Category);
+		recipesListPage.ClickOnRecipe_GetDetails(Category,1);
 	}
 
 	@BeforeTest

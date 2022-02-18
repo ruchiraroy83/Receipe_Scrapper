@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -45,20 +46,11 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver", prop.getProperty("ChromeDriverPath"));
 			ChromeOptions options = new ChromeOptions();
 			// options.addArguments("window-size=1400,800");
-			 options.addArguments("--headless"); ;
-			// ChromeDriver is just AWFUL because every version or two it breaks unless you
-			// pass cryptic arguments
-			// AGRESSIVE: options.setPageLoadStrategy(PageLoadStrategy.NONE); //
-			// https://www.skptricks.com/2018/08/timed-out-receiving-message-from-renderer-selenium.html
-//			options.addArguments("start-maximized"); // https://stackoverflow.com/a/26283818/1689770
-//			options.addArguments("enable-automation"); // https://stackoverflow.com/a/43840128/1689770
-//			options.addArguments("--no-sandbox"); // https://stackoverflow.com/a/50725918/1689770
-//			options.addArguments("--disable-infobars"); // https://stackoverflow.com/a/43840128/1689770
-//			options.addArguments("--disable-dev-shm-usage"); // https://stackoverflow.com/a/50725918/1689770
-//			options.addArguments("--disable-browser-side-navigation"); // https://stackoverflow.com/a/49123152/1689770
-//			options.addArguments("--disable-gpu"); // https://stackoverflow.com/questions/51959986/how-to-solve-selenium-chromedriver-timed-out-receiving-message-from-renderer-exc
-//			driver = new ChromeDriver(options);
-
+			 options.addArguments("--headless"); 
+			 options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+			options.addArguments("--disable-infobars"); 
+			options.addArguments("--disable-dev-shm-usage"); 
+			options.addArguments("--disable-gpu");
 			driver = new ChromeDriver(options);
 //			driver=new ChromeDriver();
 		} else if (browserName.equals("ff")) {
@@ -72,11 +64,6 @@ public class TestBase {
 
 		getDriver().manage().window().maximize();
 		getDriver().manage().deleteAllCookies();
-//		 getDriver().manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-//		 getDriver().manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-//		getDriver().manage().timeouts().pageLoadTimeout(30L, TimeUnit.SECONDS);
-//		getDriver().manage().timeouts().setScriptTimeout(3L, TimeUnit.SECONDS);
-
 		getDriver().get(prop.getProperty("URL"));
 
 	}

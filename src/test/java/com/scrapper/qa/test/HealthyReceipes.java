@@ -22,11 +22,11 @@ public class HealthyReceipes extends TestBase {
 		super();
 	}	
 
-	@Test (priority=3)
+	@Test
 	public void ScrapeHealthyReceipes() throws IOException {
 		homePage.ClickRecipes();
 		String Category=recipeCatPage.clickHealthyRecipe();
-		recipesListPage.ClickOnRecipe_GetDetails(Category);
+		recipesListPage.ClickOnRecipe_GetDetails(Category,39);
 	}
 
 	@BeforeTest
@@ -41,7 +41,7 @@ public class HealthyReceipes extends TestBase {
 	@AfterTest
 	public void TearDown() {
 	  driver.close();
-	  driver.quit();
+//	  driver.quit();
 	}
 
 }
